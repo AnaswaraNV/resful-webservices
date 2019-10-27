@@ -1,6 +1,6 @@
-package com.todo.rest.webservices.resfulwebservices.service;
+package com.todo.rest.webservices.restfulwebservices.service;
 
-import com.todo.rest.webservices.resfulwebservices.data.ToDoModel;
+import com.todo.rest.webservices.restfulwebservices.data.ToDoModel;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

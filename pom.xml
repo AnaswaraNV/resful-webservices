@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.todo.rest.webservices</groupId>
-	<artifactId>resful-webservices</artifactId>
+	<artifactId>restful-webservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>resful-webservices</name>
+	<name>restful-webservices</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -46,6 +46,10 @@
             <version>1.18.10</version>
             <scope>provided</scope>
         </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

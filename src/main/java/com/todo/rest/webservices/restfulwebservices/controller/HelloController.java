@@ -1,6 +1,6 @@
-package com.todo.rest.webservices.resfulwebservices.controller;
+package com.todo.rest.webservices.restfulwebservices.controller;
 
-import com.todo.rest.webservices.resfulwebservices.data.WelcomeResponse;
+import com.todo.rest.webservices.restfulwebservices.data.WelcomeResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

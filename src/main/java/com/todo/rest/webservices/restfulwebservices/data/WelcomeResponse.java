@@ -1,4 +1,4 @@
-package com.todo.rest.webservices.resfulwebservices.data;
+package com.todo.rest.webservices.restfulwebservices.data;
 
 public class WelcomeResponse {
     private String name;
