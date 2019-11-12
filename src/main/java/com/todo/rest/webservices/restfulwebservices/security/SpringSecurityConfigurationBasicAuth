@@ -12,21 +12,17 @@ public class SpringSecurityConfigurationBasicAuth extends WebSecurityConfigurerA
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-//        http
-//                .csrf().disable()
-//                .authorizeRequests()
-//                .antMatchers(HttpMethod.POST, "/**", "/logout" , "/login").permitAll()
-//                .anyRequest().authenticated()
-//                .and()
-//                .logout()
-//                .permitAll()
-//                .and()
-//                .httpBasic();;
-
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+                .antMatchers(HttpMethod.OPTIONS, " /**").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .httpBasic();
+        http
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers(HttpMethod.GET, " /**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();
@@ -35,16 +31,5 @@ public class SpringSecurityConfigurationBasicAuth extends WebSecurityConfigurerA
 //                 .permitAll()
 //                 .and()
 
-//        http
-//                .csrf().disable()
-//                .authorizeRequests()
-//                .antMatchers(HttpMethod.GET, "/**").permitAll()
-//                .anyRequest().authenticated()
-//                .and()
-//                .logout()
-//                .permitAll()
-//                .and()
-//                .httpBasic();;
-//    }
     }
 }

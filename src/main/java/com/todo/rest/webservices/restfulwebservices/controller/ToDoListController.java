@@ -15,7 +15,7 @@ public class ToDoListController {
     ToDoListService toDoListService;
 
     @RequestMapping(value = "/todos", method = RequestMethod.GET)
-    public List<ToDoModel> fetchTodos() {
+    public List<ToDoModel> fetchTodo() {
         //        return ResponseEntity.status(HttpStatus.OK).body(todoList);
         return toDoListService.findAllTodos();
     }
